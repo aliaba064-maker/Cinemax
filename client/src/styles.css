@@ -1,0 +1,32 @@
+:root {
+  --bg: #0b1020;
+  --panel: #151a31;
+  --card: #1e2347;
+  --text: #e8e8e8;
+  --accent: #6bd6ff;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#0b1020, #0a0f1a);
+  color: var(--text);
+}
+.nav { display: flex; gap: 16px; padding: 16px; background: #0b1a2b; position: sticky; top: 0; z-index: 100; }
+.nav a { color: #b3e3ff; text-decoration: none; }
+.container { padding: 24px; max-width: 1200px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.card { background: #1b214a; border-radius: 12px; padding: 8px; text-align: center; }
+.card .poster { width: 100%; height: 240px; object-fit: cover; border-radius: 8px; }
+.card-info { margin-top: 8px; }
+.btn { display: inline-block; padding: 6px 12px; background: #4e9cff; color: white; border-radius: 6px; text-decoration: none; margin-top: 6px; }
+.btn.secondary { background: #aaa; }
+.auth-form { display: grid; gap: 8px; max-width: 360px; margin: 20px auto; padding: 16px; background: #151a31; border-radius: 8px; }
+.auth-form input { padding: 8px; border-radius: 6px; border: 1px solid #333; background: #0b0f1a; color: #fff; }
+.movie-detail .hero { display: flex; gap: 20px; align-items: center; padding: 16px; }
+.movie-detail .poster { width: 260px; height: 360px; object-fit: cover; border-radius: 8px; }
+.movie-detail .info { flex: 1; }
+.episodes ul { list-style: none; padding: 0; }
+.comments { margin-top: 20px; }
+.comments textarea { width: 100%; min-height: 60px; padding: 8px; }
